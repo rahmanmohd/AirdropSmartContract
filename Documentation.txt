@@ -1,0 +1,39 @@
+Token Airdrop Smart Contract Documentation
+1. Overview
+The Token Airdrop Smart Contract is designed to facilitate the distribution of ERC-20 tokens to multiple recipients in a single transaction. It provides the functionality for the contract owner to specify the token to be airdropped, the quantity of tokens, and execute airdrops to one or more addresses simultaneously.
+
+2. Contract Details
+2.1 Contract Address
+Mainnet:
+Testnet (BSC TestNet): 
+2.2 Token Address
+Mainnet: 
+Testnet (BSC TestNet): 
+3. Functions
+3.1 setToken
+Description: Allows the owner to set the token address for the airdrop.
+Parameters: address _newToken
+Access: Only callable by the owner.
+3.2 setAirdropQuantity
+Description: Allows the owner to modify the airdrop quantity as necessary.
+Parameters: uint256 _newQuantity
+Access: Only callable by the owner.
+3.3 airdrop
+Description: Executes token airdrops to multiple recipients simultaneously.
+Parameters:
+address[] calldata _recipients
+uint256[] calldata _amounts
+Access: Only callable by the owner.
+4. Error Handling
+The contract incorporates extensive error handling mechanisms to address potential challenges during the token transfer process.
+Invalid recipient addresses, amounts, and failed token transfers are handled with informative error messages.
+React Web Page Documentation
+1. Overview
+The React web page is a simple user interface that allows users to connect their MetaMask wallets and interact with the Token Airdrop Smart Contract. It features a wallet connect button, enabling users to connect their wallets and perform token airdrops.
+
+2. Usage
+2.1 Connecting MetaMask Wallet
+Click the "Connect Wallet" button to connect your MetaMask wallet to the Binance Smart Chain TestNet.
+2.2 Airdrop Execution
+Enter the recipient addresses and corresponding amounts in the designated input fields.
+Click the "Execute Airdrop" button to initiate the token airdrop.
